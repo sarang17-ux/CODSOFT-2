@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+  <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>
+</head>
+<body>
+  <header id="home">
+    <nav class="navbar">
+      <div class="logo">
+        <i class="fas fa-utensils"></i>
+        <span>Restoran</span>
+      </div>
+       
+      <ul class="nav_items">
+        <div class="items">
+        <li><a href="#a">HOME</li>
+        <li><a href="#a">MENU</li>
+        <li><a href="#a">SERVICES</li>
+        <li><a href="#a">ABOUT</li>
+        
+        </div>
+        <div>
+          <button class="btn1">Login</button>  
+        </div>
+        
+      </ul>
+      <div class="menu_line">
+        <i class='ri-menu-line'></i>
+      </div>
+     </nav>
+     <section class="main">
+      <h2 class="head2"> <span>Welcome To Restoran</span></h2>
+      <h1 class="head1">enojoy our<br> delicious meal</h1>
+        <button class="btn1">BOOK A TABLE</button>
+    </section>
+  </header>
+  
+   <section class="menu" id="menusid">
+    <div class="heading-container">
+     
+      <h1>WHAT'S ON YOUR MIND?</h1>
+      
+    </div>
+
+    
+  <div class="scroll-wrapper">
+    <div class="scroll-track">
+    <div class="item"><img src="ss-removebg-preview.png" alt="Chaap"><p>Chaap</p></div>
+    <div class="item"><img src="1-removebg-preview.png" alt="Pizza"><p>Pizza</p></div>
+    <div class="item"><img src="north.jpeg" alt="North Indian"><p>North Indian</p></div>
+    <div class="item"><img src="cake.webp" alt="Cake"><p>Cake</p></div>
+    <div class="item"><img src="nood.jpeg" alt="Noodles"><p>Noodles</p></div>
+    <div class="item"><img src="1-removebg-preview.png" alt="Burger"><p>Burger</p></div>
+    <div class="item"><img src="momosss.jpeg" alt="Momos"><p>Momos</p></div>
+
+    
+    <div class="item"><img src="ss-removebg-preview.png" alt="Chaap"><p>Chaap</p></div>
+    <div class="item"><img src="1-removebg-preview.png" alt="Pizza"><p>Pizza</p></div>
+    <div class="item"><img src="north.jpeg" alt="North Indian"><p>North Indian</p></div>
+    <div class="item"><img src="cake.webp" alt="Cake"><p>Cake</p></div>
+    <div class="item"><img src="nood.jpeg" alt="Noodles"><p>Noodles</p></div>
+    <div class="item"><img src="noodles.jpg.png" alt="Burger"><p>Burger</p></div>
+    <div class="item"><img src="momosss.jpeg" alt="Momos"><p>Momos</p></div>
+    <div class="item"><img src="momosss.jpeg" alt="Momos"><p>Momos</p></div>
+
+
+    
+  </div>
+    </div>
+  
+   </section>
+<section class="rest">
+  <div class="heading">
+    <h3>canteen's To Explore</h3>
+    <h1>best <span>quality food</span><br>Pre-book Your dine-order Now!</h1>
+  </div>
+
+  <div class="boxes">
+    <div class="box">
+      <div class="image-slider">
+        <img src="old canteen.jpg" class="active" alt="cake1">
+        
+       
+      </div>
+      <div class="content">
+        <div class="title">Old Canteen</div>
+        <div class="guarantee">✔ Price Match Guarantee</div>
+        
+        <div class="badge">4.3★</div>
+        <div class="discount">10% OFF up to ₹40</div>
+      </div>
+    </div>
+  
+
+
+    <div class="box">
+      <div class="image-slider">
+        <img src="1-removebg-preview.png" class="active" alt="cake1">
+        <img src="ss-removebg-preview.png" alt="cake2">
+       
+      </div>
+      <div class="content">
+        <div class="title">PIET Cafe</div>
+        <div class="guarantee">✔ Price Match Guarantee</div>
+        
+        <div class="badge">4.3★</div>
+        <div class="discount">10% OFF up to ₹40</div>
+      </div>
+    </div>
+
+    <div class="box">
+      <div class="image-slider">
+        <img src="mesh.jpg" class="active" alt="cake1" onclick="window.location.href='menu.html'">
+        <img src="ms.jpg" alt="cake2">
+       
+      </div>
+     <div class="content" onclick="window.location.href='menu.html'">
+
+        <div class="title">Mesh</div>
+        <div class="guarantee">✔ Price Match Guarantee</div>
+        
+        <div class="badge">4.3★</div>
+        <div class="discount">10% OFF up to ₹40</div>
+      </div>
+    </div>
+
+
+
+  </div>
+
+
+
+
+
+</section>
+ 
+
+<script>
+  
+  document.querySelectorAll('.image-slider').forEach(slider => {
+    const images = slider.querySelectorAll('img'); 
+    let index = 0;
+
+
+    images[index].classList.add('active');
+
+    setInterval(() => {
+      images[index].classList.remove('active');
+      index = (index + 1) % images.length;
+      images[index].classList.add('active');
+    }, 2000);
+  });
+</script>
+
+
+
+
+</body>
+</html>
