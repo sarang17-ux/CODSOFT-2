@@ -242,7 +242,7 @@ h1 {
   max-width: 100%;
   margin: auto;
   padding: 4% 0 3% 0;
-   background: linear-gradient(rgba(0,0,0,0.7),rgba(0, 0, 0, 0.8)),url("image/122.jpg"); 
+   background: linear-gradient(rgba(0,0,0,0.7),rgba(0, 0, 0, 0.8)),url("122.jpg"); 
   background-size: cover;
   background-position: center;
   animation: in 1s linear;
